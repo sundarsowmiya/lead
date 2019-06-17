@@ -1,0 +1,66 @@
+<div class="row">
+  <!--Start Title -->
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item" [routerLinkActive]="['active']">
+            <a [routerLink]="['../../dashboard']">Dashboard</a>
+          </li>
+          <li class="breadcrumb-item" [routerLinkActive]="['active']">
+            <a [routerLink]="['../customers']">{{titleHeading}}</a>
+          </li>
+          <li class="breadcrumb-item active">View Unqualified</li>
+        </ol>
+      </div>
+      <h4 class="page-title">
+        Unqualified
+        <!-- <a [routerLink]="['../schedulded/add-schedulded']" data-toggle="modal" class="btn btn-success btn-sm ml-3"><i
+            class="mdi mdi-plus-circle mr-2"></i>Add New Schedule
+        </a> -->
+      </h4>
+    </div>
+  </div>
+</div>
+<!--End Title -->
+
+<div class="row">
+  <!-- Start View Resource -->
+  <spinner-component [active]="spinnerFlag"></spinner-component>
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+      
+
+        <div class="text-sm-right cust-padd">
+          <button type="button" class="btn btn-light mb-1" (click)="downloadtable()">
+            <i class="mdi mdi-download"></i> Export
+          </button>
+        </div>
+
+        <table datatable [dtOptions]="dtOptions"  id="datatable-buttons" width="100%"
+          class="table table-centered table-striped dt-responsive nowrap w-30 dataTable no-footer dtr-inline collapsed"
+          style="margin-top: 59px !important;">
+          <tfoot style="top:0px; position:absolute;">
+            <tr>
+              <th width="15%"><input class="form-control" type="text" placeholder="Search Name" name="search-name" /></th>
+              <!-- <th width="15%"><input class="form-control" type="text" placeholder="Sched- Time" name="search-scheduldedTime" /></th> -->
+
+              <th width="18%"><input class="form-control" type="text" placeholder="Phone Number" name="search-phoneNumber" /></th>
+              <th width="15%"><input class="form-control" type="text" placeholder="Email Id" name="search-emailId" /></th>
+              <th width="15%"><input class="form-control" type="text" placeholder="Sched- Date" name="search-organization" /></th>
+              <th width="18%"><input class="form-control" type="text" placeholder="Action" name="search-action" /></th>
+              <!-- <th><input style="display:none" class="form-control" type="text" placeholder="Option" name="search-leadid" /></th> -->
+            </tr>
+          </tfoot>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+<!-- add router end  -->
+
+<!-- class="table table-centered table-striped dt-responsive nowrap w-30 dataTable no-footer dtr-inline collapsed" -->

@@ -1,0 +1,55 @@
+<div class="wrapper sidebar-enable authentication-bg " >
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="left-side-menu ">
+        <div class="slimscroll-menu ">
+            <!-- LOGO -->
+            <a [routerLink]="['../dashboard']" class="logo text-center">
+                         <span class="logo-lg custom-height custom-bg-color">
+                            <img src="assets/images/logo_freshleads.PNG" alt="" height="58">
+                        </span>
+                        <span class="logo-sm custom-height custom-bg-color">
+                            <img src="assets/images/logo_freshleads.PNG" alt="" height="25">
+                        </span>
+            </a>
+            <!--- Sidemenu -->
+            <app-side-menu></app-side-menu>
+            <!-- End Sidebar -->
+            <div class="clearfix"></div>
+        </div>
+        <!-- Sidebar -left -->
+    </div>
+
+    
+    <div class="content-page">
+        <div class="content">
+            <!-- Topbar Start -->
+            <app-header-nav></app-header-nav>
+            <!-- end Topbar -->
+            <!-- Start Content-->
+            <div class="container-fluid">
+                    
+               <router-outlet></router-outlet> 
+
+               <!-- <app-resource-data></app-resource-data> -->
+               <!-- <app-resource-new-data></app-resource-new-data> WORKING FINE -->
+             </div>
+            <!-- container -->
+        </div>
+        <!-- content -->
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">2019 © lead.com</div>
+                </div>
+            </div>
+        </footer>
+        <!-- end Footer -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+</div>
+<!-- END wrapper -->
+<!-- Right Sidebar -->
+<!-- <app-sidebar></app-sidebar> -->

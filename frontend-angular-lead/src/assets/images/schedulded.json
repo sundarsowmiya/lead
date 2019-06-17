@@ -1,0 +1,73 @@
+[  {  
+    "leadId":"1",
+    "lead":"ran",
+    "phoneNumbe":"sundar",
+    "emailId":"sss@gmail.com",
+    "organization":"India",
+    "scheduldedtime":"Automation",
+    "leadstatus":"Automation",
+    "dateOfHire":"03/27/2019",
+    "remarks":"demo test data",
+    "assignTo":"Yes"
+ },
+ {  
+    "leadId":"2",
+    "lead":"rajan",
+    "phoneNumbe":"sundar",
+    "emailId":"sss@gmail.com",
+    "organization":"India",
+    "scheduldedtime":"Automation",
+    "leadstatus":"Automation",
+    "dateOfHire":"03/27/2019",
+    "remarks":"demo test data",
+    "assignTo":"Yes"
+ },
+ {  
+    "leadId":"3",
+    "lead":"ravi",
+    "phoneNumbe":"sundar",
+    "emailId":"sss@gmail.com",
+    "organization":"India",
+    "scheduldedtime":"Automation",
+    "leadstatus":"Automation",
+    "dateOfHire":"03/27/2019",
+    "remarks":"demo test data",
+    "assignTo":"Yes"
+ },
+ {  
+    "leadId":"4",
+    "lead":"kumar",
+    "phoneNumbe":"sundar",
+    "emailId":"sss@gmail.com",
+    "organization":"India",
+    "scheduldedtime":"Automation",
+    "leadstatus":"Automation",
+    "dateOfHire":"03/27/2019",
+    "remarks":"demo test data",
+    "assignTo":"Yes"
+ },
+ {  
+    "leadId":"5",
+    "lead":"rafi",
+    "phoneNumbe":"sundar",
+    "emailId":"sss@gmail.com",
+    "organization":"India",
+    "scheduldedtime":"Automation",
+    "leadstatus":"Automation",
+    "dateOfHire":"03/27/2019",
+    "remarks":"demo test data",
+    "assignTo":"Yes"
+ },
+ {  
+    "leadId":"6",
+    "lead":"ran",
+    "phoneNumbe":"sundar",
+    "emailId":"sss@gmail.com",
+    "organization":"India",
+    "scheduldedtime":"Automation",
+    "leadstatus":"Automation",
+    "dateOfHire":"03/27/2019",
+    "remarks":"demo test data",
+    "assignTo":"Yes"
+ }
+]

@@ -1,0 +1,35 @@
+<div class="navbar-custom">
+	<ul class="list-unstyled topbar-right-menu float-right mb-0">
+		<li class="dropdown notification-list">
+			<a class="nav-link dropdown-toggle nav-user arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                <span class="account-user-avatar"> 
+                     
+                          <img src="assets/images/users/administrator.png" alt="user-image" class="rounded-circle"> 
+                      </span>
+				
+                          <!-- <span class="account-user-name">{{role}}</span> -->
+						  <span class="account-user-name"> Admin {{resourceName}}</span>
+						 <!-- <span class="account-user-name">Role: {{role}}</span> -->
+				<span class="account-position">ID:245789 </span><!--  {{resourceID}}-->
+				
+			</a>
+			<div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown ">
+				<!-- item-->
+				<a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-account-circle"></i>
+					<span>My Account</span>
+				</a>
+				<!-- item-->
+				<a (click)="userLogout()" class="dropdown-item notify-item"> <i class="mdi mdi-logout"></i>
+					<span>Logout</span>
+				</a>
+			</div>
+		</li>
+	</ul>
+	<button class="button-menu-mobile open-left" (click)="pushmenu()"> <i class="mdi mdi-menu"></i>
+	</button>
+	<div class="app-search">
+		<h4 class="page-title cust-md-text"> DASHBOARD REPORT</h4>
+	</div>
+
+	
+</div>

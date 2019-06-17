@@ -1,0 +1,118 @@
+<div class="row">
+  <!--Start Title -->
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item" [routerLinkActive]="['active']">
+            <a [routerLink]="['../../dashboard']">Dashboard</a>
+          </li>
+          <li class="breadcrumb-item" [routerLinkActive]="['active']">
+            <a [routerLink]="['../leads']">{{titleHeading}}</a>
+          </li>
+          <li class="breadcrumb-item active">View Leads</li>
+        </ol>
+      </div>
+      <h4 class="page-title">
+        Leads
+        <a [routerLink]="['../leads/add-leads']" data-toggle="modal" class="btn btn-success btn-sm ml-3"><i
+            class="mdi mdi-plus-circle mr-2"></i>Add New Leads
+        </a>
+      </h4>
+    </div>
+  </div>
+</div>
+<!--End Title -->
+
+<div class="row">
+  <!-- Start View Resource -->
+  <spinner-component [active]="spinnerFlag"></spinner-component>
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Import Data</h4>
+                <button type="button" class="close " #closeBtn data-dismiss="modal" (click)="closeModal()"
+                  aria-hidden="true">
+                  ×
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <form [formGroup]="uploadResoucesForm" (ngSubmit)="uploadData(f)" #f="ngForm">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="File Upload">File Upload: </label><br />
+                          <input type="file" formControlName="uploadFileData" name="uploadFileData" id="uploadFileData"
+                            class="btn btn-light" (change)="onUploadChanged($event)" accept=".xlsx" multiple />
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <button type="submit" [disabled]="isDisabled" class="btn btn-primary mb-4">
+                          Upload 
+                        </button>
+                      </div>
+
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <div class="text-sm-right cust-padd">
+          <button type="button" class="btn btn-light mb-1" (click)="downloadtable()">
+            <i class="mdi mdi-download"></i> Export
+          </button>
+        </div>
+      
+        <table datatable [dtOptions]="dtOptions" id="datatable-buttons" width="100%"
+          class="table table-centered table-striped dt-responsive nowrap w-30 dataTable no-footer dtr-inline collapsed"
+          style="margin-top: 59px !important;" ><!--style="margin-top: 59px !important;" -->
+          <tfoot style="top:0px; position:absolute;">
+            <tr>
+              <th><input class="form-control" type="text" placeholder="Search lead" name="search-name" /></th>
+              <th><input class="form-control" type="text" placeholder="Phone Numbe" name="search-phoneNumber" /></th>
+              <th><input class="form-control" type="text" placeholder="Email Id" name="search-emailId" /></th>
+              <th><input class="form-control" type="text" placeholder="Message" name="search-message" /></th>
+              <th><input class="form-control" type="text" placeholder="Schedulded Time" name="search-scheduldedTime" />
+              </th>
+              <th><input class="form-control" type="text" placeholder="Schedulded Date" name="search-scheduldedDate" />
+              </th>
+              <th><input style="display: none;" class="form-control" type="text" placeholder="Remarks"
+                  name="search-remarks" /></th>
+              <th><input style="display: none;" class="form-control" type="text" placeholder="Assign To"
+                  name="search-markas" /></th>
+              <th><input style="display: none;" class="form-control" type="text" placeholder="Lead Status"
+                  name="search-lead-status" /></th>
+
+              <th><input style="display: none;" class="form-control" type="text" placeholder="Lead edit"
+                  name="search-leadid" /></th>
+            </tr>
+          </tfoot>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+<!-- add router end  -->
+
+<!-- class="table table-centered table-striped dt-responsive nowrap w-30 dataTable no-footer dtr-inline collapsed" -->

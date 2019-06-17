@@ -1,0 +1,80 @@
+<ul class="metismenu side-nav">
+		
+		<!-- <li *ngFor='let usersubmenuList of userSubMenus.userSubMenus ;let i = index'>{{usersubmenuList}}</li> -->
+		<!-- <a resource-edit-id="`+data.userId+`"  -->
+		<!-- <li class="side-nav-item" [routerLinkActive]="['active']" *ngFor="let usersubmenulist of userSubMenus.userSubMenus; let i = index;">
+				<a [routerLink]="['./',usersubmenulist]" class="side-nav-link"> 
+					<i class="dripicons-meter"></i>
+						<span style="text-transform: capitalize;"> {{usersubmenulist}} </span> 
+					</a>
+			</li> -->
+
+		
+
+			<li class="side-nav-item" [routerLinkActive]="['active']">
+				<a [routerLink]="['../dashboard']" class="side-nav-link"> 
+					<i class="dripicons-meter"></i>
+						<span> Dashboard </span> 
+					</a>
+			</li>
+			<li class="side-nav-item" [routerLinkActive]="['active']">
+					<a [routerLink]="['./leads']" class="side-nav-link">
+						<i class="mdi mdi-filter-variant"></i>
+						<span>Leads </span>
+						<span class="menu-arrow"></span>
+						</a>
+			</li>
+			<li class="side-nav-item" [routerLinkActive]="['active']">
+					<a [routerLink]="['./schedulded']" class="side-nav-link">
+						<i class="mdi mdi-alarm"></i>
+						<span>Schedulded </span>
+						<span class="menu-arrow"></span>
+						</a>
+			</li>
+			<li class="side-nav-item" [routerLinkActive]="['active']">
+					<a [routerLink]="['./followup']" class="side-nav-link">
+						<i class="mdi mdi-bell-outline"></i>
+						<span>Follow Up</span>
+						<span class="menu-arrow"></span>
+						</a>
+			</li>
+			<li class="side-nav-item" [routerLinkActive]="['active']">
+				<a [routerLink]="['./customers']" class="side-nav-link">
+					<i class="mdi mdi-account-convert"></i>
+					<span>Customers </span>
+					<span class="menu-arrow"></span>
+					</a>
+			</li>
+			<li class="side-nav-item" [routerLinkActive]="['active']">
+				<a [routerLink]="['./unqualified']" class="side-nav-link">
+					<i class="mdi mdi-account-remove"></i>
+					<span>Unqualified </span>
+					<span class="menu-arrow"></span>
+					</a>
+			</li>
+			<!-- <li class="side-nav-item" [routerLinkActive]="['active']">
+				<a [routerLink]="['./recordings']" class="side-nav-link">
+					<i class="mdi mdi-play-circle-outline"></i>
+					<span>Recordings </span>
+					<span class="menu-arrow"></span>
+					</a>
+			</li> -->
+			<li class="side-nav-item" [routerLinkActive]="['active']">
+					<a [routerLink]="['./profile']" class="side-nav-link">
+						<i class="dripicons-document"></i>
+						<span>Profile </span>
+						<span class="menu-arrow"></span>
+						</a>
+			</li>
+<!--  style="text-transform: capitalize;"
+		<li class="side-nav-item">
+			<a href="javascript: void(0);" class="side-nav-link"> <i class="dripicons-copy"></i> <span> Demo Text2 </span> <span class="menu-arrow"></span> </a>
+		</li>
+		<li class="side-nav-item">
+			<a href="javascript: void(0);" class="side-nav-link"> <i class="dripicons-browser"></i> <span> Demo Text3 </span> <span class="menu-arrow"></span> </a>
+		</li>
+		<li class="side-nav-title side-nav-item mt-1">Demo Text4</li>
+		<li class="side-nav-item">
+			<a href="javascript: void(0);" class="side-nav-link"> <i class="dripicons-briefcase"></i> <span> Demo Text6 </span> <span class="menu-arrow"></span> </a>
+		</li> -->
+	</ul>

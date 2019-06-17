@@ -1,0 +1,12 @@
+.modal-backdrop.fade{
+    opacity: 0.5;
+}
+.custom-padd-12{
+    padding-top:30px;
+}
+:host ::ng-deep .ui-fluid .ui-inputtext{
+    border: 1px solid #dee2e6 !important;
+}
+:host ::ng-deep .dropdown-btn {
+    border: 1px solid #dee2e6 !important;
+}
